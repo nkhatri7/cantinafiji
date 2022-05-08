@@ -1,5 +1,6 @@
 @use './global' as g;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -33,13 +34,22 @@
   align-items: center;
 }
 
+.about-page {
+  background-color: #FAFAFA;
+}
+
 h1, .nav-link {
   font-family: 'Geogrotesque Condensed', sans-serif;
   letter-spacing: 2px;
 }
 
-p {
+p, a {
   font-family: 'Poppins', sans-serif;
+}
+
+.body-text {
+  color: #2B2B2B;
+  font-weight: 500;
 }
 
 .hidden {

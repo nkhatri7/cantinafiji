@@ -1,0 +1,36 @@
+.about-page > main {
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    > .about-us-text {
+        max-width: 700px;
+        > h2 {
+            font-family: 'Arima Madurai', sans-serif;
+            font-size: 1.2rem;
+            color: #282828;
+        }
+        > h1 {
+            font-size: 2rem;
+            margin: 1rem 0 2rem 0;
+        }
+    }
+    > .about-img {
+        width: 100%;
+        max-width: 400px;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-page > main {
+        padding: 8rem 2.5rem 2.5rem 2.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        > .about-img {
+            margin: 0;
+        }
+    }
+}

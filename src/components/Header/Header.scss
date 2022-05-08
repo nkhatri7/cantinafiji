@@ -6,7 +6,7 @@
 }
 
 header {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1.5rem;
     width: 100%;
     position: absolute;
     top: 0;
@@ -21,6 +21,9 @@ header {
         height: 2.5rem;
         width: 2.5rem;
         border: none;
+        &.menu-btn-white {
+            background: url('../../assets/hamburger-icon-white.svg') no-repeat center;
+        }
         &.menu-btn-open {
             background: url('../../assets/close-icon.svg') no-repeat center;
             z-index: 10;
@@ -37,7 +40,7 @@ header {
         background-color: g.$brand-yellow;
         &.nav-open {
             display: block;
-            animation: menu-background-animation 1s;
+            animation: menu-background-animation 0.75s;
         }
         > ul {
             text-align: center;
@@ -52,6 +55,7 @@ header {
                     text-decoration: none;
                     font-size: 2rem;
                     font-weight: 600;
+                    transition: opacity 0.25s ease-in;
                     &.current-nav-link {
                         color: white;
                     }
@@ -64,5 +68,11 @@ header {
 @media screen and (min-width: 768px) {
     header {
         padding: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-link:hover {
+        opacity: 0.5;
     }
 }

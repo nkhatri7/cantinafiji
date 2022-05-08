@@ -1,0 +1,30 @@
+.website-footer {
+    background-color: #272727;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    > .footer-logo {
+        width: 10rem;
+        margin: 0 0 2rem 0;
+    }
+    .footer-link {
+        text-decoration: none;
+    }
+    .footer-text, .separator {
+        color: white;
+    }
+    .separator {
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .website-footer {
+        flex-direction: row;
+        > .footer-logo {
+            margin: 0 2rem 0 0;
+        }
+    }
+}

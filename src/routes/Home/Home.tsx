@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="home">
         <div className="landing-page-wrapper">
-            <Header isLandingPage={true} currentPage="Home" />
+            <Header currentPage="Home" />
             <main>
                 <h1>Experience Fiji's Own Mexico</h1>
                 <div className="landing-page-btns-container flex-centre">
