@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@use './global' as g;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-column-centre {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1, .nav-link {
+  font-family: 'Geogrotesque Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.cta, .secondary-cta {
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta {
+  background-color: g.$brand-yellow;
+  color: black;
+  border: 1px solid g.$brand-yellow;
+}
+
+@media screen and (min-width: 1200px) {
+  button:hover {
+    cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  .cta:hover {
+    background-color: #FFC862;
+    border: 1px solid #FFC862;
+  }
+  .secondary-cta:hover {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
