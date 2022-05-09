@@ -6,6 +6,7 @@ import mediumSpiceIcon from '../../assets/medium-spice-icon.png';
 import hotSpiceIcon from '../../assets/hot-spice-icon.png';
 import vegetarianIcon from '../../assets/vegetarian-icon.png';
 import veganIcon from '../../assets/vegan-icon.png';
+import Footer from '../../components/Footer/Footer';
 
 type FoodOption = {
     optionText: string,
@@ -190,6 +191,7 @@ const Menu = () => {
                     </section>
                 </section>
             </main>
+            <Footer />
         </div>
     );
 }
