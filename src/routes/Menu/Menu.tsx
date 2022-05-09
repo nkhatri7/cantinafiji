@@ -105,41 +105,53 @@ const Menu = () => {
         </article>
     );
 
-    const FoodMenuDisplay = foodMenu.map((section: FoodMenuSection) => (
-        <section key={section.name} className="food-section flex-column">
-            <div className="flex-start">
-                <h3 className="section-name">{section.name}</h3>
-                {section.englishName ? 
-                    <h4 className='section-sub-name'>{`(${section.englishName})`}</h4>
+    const getFoodMenuDisplay = (sections: FoodMenuSection[]) => {
+        return sections.map((section: FoodMenuSection): ReactElement => (
+            <section key={section.name} className="food-section flex-column">
+                <div className="flex-start">
+                    <h3 className="section-name">{section.name}</h3>
+                    {section.englishName ? 
+                        <h4 className='section-sub-name'>{`(${section.englishName})`}</h4>
+                        : null
+                    }
+                    {section.spiceLevel ?
+                        <img 
+                            src={(section.spiceLevel === 'Mild') ? mildSpiceIcon :
+                            (section.spiceLevel === 'Medium') ? mediumSpiceIcon :
+                            hotSpiceIcon} 
+                            alt="Medium Spice" 
+                            className="section-spice-icon" 
+                        />
+                        : null
+                    }
+                    {section.price ? 
+                        <span className="section-price">{`$${section.price.toFixed(2)}`}</span>
+                        : null
+                    }
+                </div>
+                {section.description ? 
+                    <p className="section-description">{section.description}</p>
                     : null
                 }
-                {section.spiceLevel ?
-                    <img 
-                        src={(section.spiceLevel === 'Mild') ? mildSpiceIcon :
-                        (section.spiceLevel === 'Medium') ? mediumSpiceIcon :
-                        hotSpiceIcon} 
-                        alt="Medium Spice" 
-                        className="section-spice-icon" 
-                    />
+                {section.items ? 
+                    section.items.map((item: FoodItem): ReactElement => (
+                        <FoodItemDisplay key={item.itemName} foodItem={item} />
+                    ))
                     : null
                 }
-                {section.price ? 
-                    <span className="section-price">{`$${section.price.toFixed(2)}`}</span>
-                    : null
-                }
-            </div>
-            {section.description ? 
-                <p className="section-description">{section.description}</p>
-                : null
-            }
-            {section.items ? 
-                section.items.map((item: FoodItem): ReactElement => (
-                    <FoodItemDisplay key={item.itemName} foodItem={item} />
-                ))
-                : null
-            }
-        </section>
-    ));
+            </section>
+        ));
+    }
+
+    const FoodMenuColumnOne = getFoodMenuDisplay(foodMenu.slice(0, 6));
+    const FoodMenuColumnTwo = getFoodMenuDisplay(foodMenu.slice(6));
+
+    const GuideElement = (props: { image: string, label: string }): ReactElement => (
+        <div className="flex-centre">
+            <img src={props.image} alt={props.label} className="guide-icon" />
+            <p className="guide-label">{props.label}</p>
+        </div>
+    );
 
     return (
         <div className="menu">
@@ -147,8 +159,35 @@ const Menu = () => {
             <main>
                 <h1>Menu</h1>
                 <h2>Food Menu</h2>
+                <section className="food-menu-guide flex-column-centre">
+                    <span className="guide-text">GUIDE</span>
+                    <div className="guide-sections-container">
+                        <section className="flex-column-centre">
+                            <span className="guide-title">
+                                Spicy Dishes Measured By Degrees
+                            </span>
+                            <article className="guide-elements-container flex-centre">
+                                <GuideElement image={mildSpiceIcon} label='mild' />
+                                <GuideElement image={mediumSpiceIcon} label='medium' />
+                                <GuideElement image={hotSpiceIcon} label='hot' />
+                            </article>
+                        </section>
+                        <section className="flex-column-centre">
+                            <span className="guide-title">Dietary Requirements</span>
+                            <article className="guide-elements-container flex-centre">
+                                <GuideElement image={vegetarianIcon} label='vegetarian' />
+                                <GuideElement image={veganIcon} label='vegan' />
+                            </article>
+                        </section>
+                    </div>
+                </section>
                 <section className="menu-section">
-                    {FoodMenuDisplay}
+                    <section className="flex-column">
+                        {FoodMenuColumnOne}
+                    </section>
+                    <section className="flex-column">
+                        {FoodMenuColumnTwo}
+                    </section>
                 </section>
             </main>
         </div>

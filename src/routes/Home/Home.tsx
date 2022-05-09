@@ -13,7 +13,7 @@ const Home = () => {
             <main>
                 <h1>Experience Fiji's Own Mexico</h1>
                 <div className="landing-page-btns-container flex-centre">
-                    <Link to="/" className='secondary-cta'>View Menu</Link>
+                    <Link to="/menu" className='secondary-cta'>View Menu</Link>
                     <Link to="/" className='cta'>Book A Table</Link>
                 </div>
             </main>

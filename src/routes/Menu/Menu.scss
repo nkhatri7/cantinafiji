@@ -6,12 +6,42 @@
     > h2 {
         font-family: 'Arima Madurai';
     }
+    > .food-menu-guide {
+        border: 1px solid black;
+        padding: 1rem;
+        width: max-content;
+        margin: 1rem auto 1rem auto;
+        .guide-sections-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .guide-text, .guide-title, .guide-label {
+            font-family: 'Arima Madurai', sans-serif;
+            font-weight: 600;
+        }
+        > .guide-text {
+            font-size: 1.5rem;
+        }
+        .guide-title {
+            color: g.$menu-red;
+        }
+        .guide-elements-container {
+            margin: 0.5rem 0 1rem 0;
+            gap: 0 1.5rem;
+            .guide-label {
+                margin-left: 0.5rem;
+            }
+        }
+    }
     > .menu-section {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
-        > .food-section {
+        max-width: 1440px;
+        .food-section {
             margin: 1rem 0;
             .section-name, .section-sub-name {
                 font-family: 'Arima Madurai', sans-serif;
@@ -62,6 +92,28 @@
                     margin-left: 0.5rem;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menu > main {
+        > .food-menu-guide > .guide-sections-container {
+            flex-direction: row;
+            gap: 0 4rem;
+        }
+        > .menu-section {
+            flex-direction: row;
+            gap: 0 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu > main {
+        padding: 8rem 2.5rem 2.5rem 2.5rem;
+        > .menu-section {
+            gap: 0 4rem;
         }
     }
 }
