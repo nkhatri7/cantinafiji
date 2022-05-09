@@ -18,7 +18,7 @@ const Header = ({ currentPage }: HeaderProps) => {
     const menuBtn = useRef<HTMLButtonElement>(null);
     const nav = useRef<HTMLElement>(null);
 
-    const handleMenuToggle = () => {
+    const handleMenuToggle = (): void => {
         menuBtn.current?.classList.toggle('menu-btn-open');
         nav.current?.classList.toggle('nav-open');
     }
@@ -55,7 +55,7 @@ const Header = ({ currentPage }: HeaderProps) => {
                 <ul className='flex-column-centre'>
                     <NavLink link='/' page='Home' />
                     <NavLink link='/about' page='About Us' />
-                    <NavLink link='/' page='Menu' />
+                    <NavLink link='/menu' page='Menu' />
                     <NavLink link='/' page="What's On" />
                     <NavLink link='/' page='Reservations' />
                     <NavLink link='/' page='Contact' />

@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     > .footer-logo {
-        width: 10rem;
+        width: 6rem;
         margin: 0 0 2rem 0;
     }
     .footer-link {
@@ -14,6 +14,7 @@
     }
     .footer-text, .separator {
         color: white;
+        font-size: 0.8rem;
     }
     .separator {
         margin: 0 0.5rem;

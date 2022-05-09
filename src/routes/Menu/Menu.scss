@@ -1,0 +1,67 @@
+@use '../../global' as g;
+
+.menu > main {
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
+    min-height: 100vh;
+    > h2 {
+        font-family: 'Arima Madurai';
+    }
+    > .menu-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        > .food-section {
+            margin: 1rem 0;
+            .section-name, .section-sub-name {
+                font-family: 'Arima Madurai', sans-serif;
+            }
+            .section-name {
+                font-size: 1.3rem;
+                color: g.$menu-red;
+            }
+            .section-sub-name {
+                margin: 0 0.5rem;
+                text-transform: uppercase;
+            }
+            .section-spice-icon {
+                width: 1.2rem;
+                margin: -0.2rem 0.5rem 0 0.5rem;
+            }
+            .section-price, .item-price, .option-price {
+                font-weight: 500;
+            }
+            .section-price {
+                margin-top: -0.2rem;
+            }
+            .section-description {
+                font-size: 0.95rem;
+            }
+            .food-item {
+                margin: 0.5rem 0;
+                .item-name {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+                .food-item-icon {
+                    width: 1.2rem;
+                    margin: -0.1rem 0 0 0.5rem;
+                }
+                .item-price {
+                    margin-left: 1rem;
+                }
+            }
+            .food-option {
+                flex-wrap: wrap;
+                > .option-icon {
+                    width: 1rem;
+                    margin: 0 0 -0.1rem 0.5rem;
+                }
+                > .option-price {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+}
