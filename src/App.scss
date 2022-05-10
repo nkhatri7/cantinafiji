@@ -53,6 +53,13 @@ p, a {
   font-family: 'Poppins', sans-serif;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
 .body-text {
   color: #2B2B2B;
   font-weight: 500;

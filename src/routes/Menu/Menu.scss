@@ -3,10 +3,21 @@
 .menu > main {
     padding: 8rem 1.5rem 1.5rem 1.5rem;
     min-height: 100vh;
-    > h2 {
-        font-family: 'Arima Madurai';
+    > h1 {
+        text-align: center;
+        font-size: 2.3rem;
     }
-    > .food-menu-guide {
+    .menu-toggle {
+        background-color: black;
+        color: white;
+        border: none;
+        width: 11rem;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        padding: 0.7rem 0;
+        margin: 1rem 0;
+    }
+    .food-menu-guide {
         border: 1px solid black;
         padding: 1rem;
         width: max-content;
@@ -35,12 +46,14 @@
             }
         }
     }
-    > .menu-section {
+    .food-menu, .drinks-menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         max-width: 1440px;
+    }
+    .food-menu {
         .food-section {
             margin: 1rem 0;
             .section-name, .section-sub-name {
@@ -83,7 +96,6 @@
                 }
             }
             .food-option {
-                flex-wrap: wrap;
                 > .option-icon {
                     width: 1rem;
                     margin: 0 0 -0.1rem 0.5rem;
@@ -94,25 +106,71 @@
             }
         }
     }
+    .drinks-menu {
+        .drinks-section {
+            margin: 1rem 0;
+            .drinks-section-name {
+                font-family: 'Arima Madurai';
+                color: g.$menu-red;
+            }
+            .drinks-subsection {
+                margin: 0.5rem 0;
+                > .drinks-subsection-name {
+                    font-family: 'Poppins';
+                    color: g.$menu-red;
+                }
+            }
+            .drink {
+                margin: 0.5rem 0;
+                .drink-name, .drink-price {
+                    display: inline-block;
+                }
+                .drink-name, .drink-option-text {
+                    margin-right: 1rem;
+                }
+                .drink-name {
+                    text-transform: uppercase;
+                }
+                .drink-price {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu > main {
+        padding: 8rem 2.5rem 2.5rem 2.5rem;
+    }
 }
 
 @media screen and (min-width: 800px) {
     .menu > main {
-        > .food-menu-guide > .guide-sections-container {
+        .food-menu-guide > .guide-sections-container {
             flex-direction: row;
             gap: 0 4rem;
         }
-        > .menu-section {
+        .food-menu {
             flex-direction: row;
             gap: 0 2rem;
         }
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .menu > main .drinks-menu {
+        flex-direction: row;
+        gap: 0 2rem;
+        > .drinks-menu-column {
+            width: calc(100% /3);
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .menu > main {
-        padding: 8rem 2.5rem 2.5rem 2.5rem;
-        > .menu-section {
+        .food-menu, .drinks-menu {
             gap: 0 4rem;
         }
     }
