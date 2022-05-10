@@ -314,7 +314,7 @@ const Menu = () => {
                         <section className="drinks-menu-column flex-column">
                             {DrinksMenuColumnTwo}
                         </section>
-                        <section className="drinks-menu-column">
+                        <section className="drinks-menu-column flex-column">
                             {DrinksMenuColumnThree}
                         </section>
                     </section>

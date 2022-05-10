@@ -16,6 +16,7 @@
         font-size: 1.1rem;
         padding: 0.7rem 0;
         margin: 1rem 0;
+        transition: opacity 0.3s ease-in-out;
     }
     .food-menu-guide {
         border: 1px solid black;
@@ -170,6 +171,9 @@
 
 @media screen and (min-width: 1200px) {
     .menu > main {
+        .menu-toggle:hover {
+            opacity: 0.7;
+        }
         .food-menu, .drinks-menu {
             gap: 0 4rem;
         }
