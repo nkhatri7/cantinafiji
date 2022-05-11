@@ -1,0 +1,48 @@
+.events > main {
+    padding: 8rem 1.5rem 1.5rem 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    > .events-text {
+        margin-bottom: 2rem;
+        > .events-title-container {
+            gap: 0 1rem;
+            margin-bottom: 2rem;
+            > h1 {
+                font-size: 2rem;
+            }
+        }
+        .event-name {
+            font-family: 'Arima Madurai', sans-serif;
+            font-size: 1.2rem;
+        }
+        .no-more-events {
+            margin-top: 5rem;
+        }
+    }
+    .events-img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .events > main {
+        padding: 8rem 2.5rem 2.5rem 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .events > main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 2rem;
+        > .events-text {
+            margin-bottom: 0;
+            max-width: 50%;
+        }
+    }
+}

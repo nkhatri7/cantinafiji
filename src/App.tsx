@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
 import About from './routes/About/About';
+import Events from './routes/Events/Events';
 import Home from './routes/Home/Home';
 import Menu from './routes/Menu/Menu';
 
@@ -13,6 +14,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/menu' element={<Menu />} />
+          <Route path='/events' element={<Events />} />
         </Routes>
       </BrowserRouter>
     </div>

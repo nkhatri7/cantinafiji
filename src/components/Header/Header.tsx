@@ -56,7 +56,7 @@ const Header = ({ currentPage }: HeaderProps) => {
                     <NavLink link='/' page='Home' />
                     <NavLink link='/about' page='About Us' />
                     <NavLink link='/menu' page='Menu' />
-                    <NavLink link='/' page="What's On" />
+                    <NavLink link='/events' page="What's On" />
                     <NavLink link='/' page='Reservations' />
                     <NavLink link='/' page='Contact' />
                 </ul>
