@@ -5,13 +5,13 @@
         "items": [
             {
                 "itemName": "HOT & SPICY GRINGO FRIES",
-                "price": 5.00,
+                "price": 5.50,
                 "description": "Seasoned fries tossed in chili, garlic, coriander & lime served with tomato salsa"
             },
             {
                 "itemName": "LOADED FRIES",
                 "spiceLevel": "Medium",
-                "price": 6.95,
+                "price": 7.50,
                 "description": "Seasoned fries, chili cheese, cilantro, shallots & salsa",
                 "options": [
                     {
@@ -22,14 +22,14 @@
             },
             {
                 "itemName": "BASKET OF FRIES",
-                "price": 4.50,
+                "price": 5.50,
                 "description": "With tomato sauce"
             },
             {
                 "itemName": "GUACAMOLE FRESCA",
                 "spiceLevel": "Medium",
                 "dietary": "Vegan",
-                "price": 12.95,
+                "price": 14,
                 "description": "Freshly made avocado dip with tomato, onion, cilantro and spices with a hint of lemon. Served with corn chips"
             },
             {
@@ -40,13 +40,13 @@
             },
             {
                 "itemName": "AL CALAMARI",
-                "price": 13.95,
+                "price": 14.95,
                 "description": "Golden fried calamari rings with chili and mango mayo"
             },
             {
                 "itemName": "ALITAS al HORNO",
                 "spiceLevel": "Hot",
-                "price": 13.50,
+                "price": 14.95,
                 "description": "Chicken wings tossed in a spicy, tangy chili sauce"
             }
         ]
@@ -60,12 +60,12 @@
                 "options": [
                     {
                         "optionText": "Grilled Chicken | Chile Beef | Carnita Pork",
-                        "optionPrice": 17.95
+                        "optionPrice": 19.95
                     },
                     {
                         "optionText": "Veggies, freshly sautéed",
                         "dietary": "Vegetarian",
-                        "optionPrice": 14.95
+                        "optionPrice": 15.95
                     }
                 ]
             }
@@ -82,7 +82,7 @@
                 "options": [
                     {
                         "optionText": "Corn tortillas",
-                        "optionPrice": 17.50
+                        "optionPrice": 17.95
                     },
                     {
                         "optionText": "Flour tortillas",
@@ -97,7 +97,7 @@
                 "options": [
                     {
                         "optionText": "Corn tortillas",
-                        "optionPrice": 17.50
+                        "optionPrice": 17.95
                     },
                     {
                         "optionText": "Flour tortillas",
@@ -112,11 +112,11 @@
                 "options": [
                     {
                         "optionText": "Corn tortillas",
-                        "optionPrice": 17.50
+                        "optionPrice": 18.95
                     },
                     {
                         "optionText": "Flour tortillas",
-                        "optionPrice": 14.95
+                        "optionPrice": 16.95
                     }
                 ]
             },
@@ -127,11 +127,11 @@
                 "options": [
                     {
                         "optionText": "Corn tortillas",
-                        "optionPrice": 17.50
+                        "optionPrice": 17.95
                     },
                     {
                         "optionText": "Flour tortillas",
-                        "optionPrice": 14.95
+                        "optionPrice": 15.95
                     }
                 ]
             },
@@ -143,7 +143,7 @@
                 "options": [
                     {
                         "optionText": "Corn tortillas",
-                        "optionPrice": 16.50
+                        "optionPrice": 16.95
                     },
                     {
                         "optionText": "Flour tortillas",
@@ -163,12 +163,12 @@
                 "options": [
                     {
                         "optionText": "Char Grilled Chicken | Chile Beef | Roast Pork",
-                        "optionPrice": 17.95
+                        "optionPrice": 18.95
                     },
                     {
                         "optionText": "Veggie, freshly sauteed",
                         "dietary": "Vegetarian",
-                        "optionPrice": 13.50
+                        "optionPrice": 14.95
                     }
                 ]
             }
@@ -184,12 +184,12 @@
                 "options": [
                     {
                         "optionText": "Chipotle Chicken | Chile Beef | Carnita Pork",
-                        "optionPrice": 18.95
+                        "optionPrice": 19.95
                     },
                     {
                         "optionText": "Mexi Veggie",
                         "dietary": "Vegetarian",
-                        "optionPrice": 14.95
+                        "optionPrice": 15.95
                     }
                 ]
             }
@@ -207,25 +207,25 @@
             {
                 "itemName": "GANGSTA BURGER",
                 "spiceLevel": "Medium",
-                "price": 19.95,
+                "price": 20.95,
                 "description": "Beef patty on toasted bun with fried egg, tasty cheese, bacon, onion jam, lettuce and tomato salsa with French fries"
             },
             {
                 "itemName": "NIÑOS BURGER",
                 "spiceLevel": "Medium",
-                "price": 10.95,
+                "price": 11.95,
                 "description": "Beef patty, lettuce and tomato on tasted bun with salsa and French fries"
             },
             {
                 "itemName": "BURGER AL POLLO",
                 "spiceLevel": "Medium",
-                "price": 14.95,
+                "price": 16,
                 "description": "Pulled Chicken with lettuce, tomato, grilled onion and salsa ranchera with French fries"
             },
             {
                 "itemName": "CARNITAS BURGER",
                 "spiceLevel": "Medium",
-                "price": 14.95,
+                "price": 19.95,
                 "description": "Braised pulled pork, citrus slaw, pineapple, tomato Chutney, lime & tomatillo salsa with French fries"
             },
             {
@@ -237,21 +237,22 @@
             {
                 "itemName": "CANTINA FRIED CHICKEN",
                 "spiceLevel": "Medium",
-                "price": 14.95,
+                "price": 16.95,
                 "description": "Crumb fried chicken (3pcs) & chips with chipotle dip"
             },
             {
                 "itemName": "MAC & CHEESE",
                 "spiceLevel": "Mild",
                 "dietary": "Vegetarian",
-                "price": 12.50,
-                "description": "Pasta with cheese sauce with diced red pepper"
-            },
-            {
-                "itemName": "Add On:",
-                "spiceLevel": "Medium",
-                "price": 5.95,
-                "description": "Chipotle Chicken | Chile Beef | Roast Pork"
+                "price": 13.95,
+                "description": "Pasta with cheese sauce with diced red pepper",
+                "options": [
+                    {
+                        "optionText": "Chipotle Chicken | Chile Beef | Roast Pork",
+                        "spiceLevel": "Medium",
+                        "optionPrice": 19.95
+                    }
+                ]
             }
         ]
     },
@@ -262,13 +263,13 @@
                 "itemName": "VEGE SUPREMA'S",
                 "spiceLevel": "Medium",
                 "dietary": "Vegetarian",
-                "price": 15.50,
+                "price": 15.95,
                 "description": "Mixed vegetables, chile beans, cream cheese and chipotle Salsa wrapped in flour tortillas, over baked with cheese, served with tomatillo salsa"
             },
             {
                 "itemName": "POLLO EL CAMINITO",
                 "spiceLevel": "Medium",
-                "price": 17.95,
+                "price": 19.95,
                 "description": "Adobo chicken, chile beans, peppers, onions, cream cheese and chipotle Salsa wrapped in flour tortillas, over baked with cheese and poblano mole, served with tomatillo salsa"
             }
         ]
@@ -279,11 +280,11 @@
         "items": [
             {
                 "itemName": "Tequila Prawns",
-                "price": 39.95
+                "price": 42.95
             },
             {
                 "itemName": "Yucutan Chicken or Beef",
-                "price": 32.95
+                "price": 34.95
             },
             {
                 "itemName": "Market Vegetables",
@@ -300,25 +301,25 @@
             {
                 "itemName": "GRILLED PRAWNS",
                 "spiceLevel": "Mild",
-                "price": 29.95,
+                "price": 34,
                 "description": "Skewers of prawns marinated in Chimichurri with lime & herb butter on Cajun potato and fried onion rings, vegetables or slaw"
             },
             {
                 "itemName": "SEAFOOD PLATTER",
                 "spiceLevel": "Mild",
-                "price": 87.00,
+                "price": 89,
                 "description": "Grilled half lobster tail, prawn cutlets, wallu fillet and crumb fried calamari rings, served with curry mayo, chili garlic sauce and salsa verde, vegetables or slaw, and herb mash"
             },
             {
                 "itemName": "KING FISH IN CHIPOTLE RUB",
                 "spiceLevel": "Medium",
-                "price": 28.50,
+                "price": 29.95,
                 "description": "Pan grilled fillet of Walu brushed with Chipotle pibil glaze, with herb butter, on Cajun potato, fried onion rings and vegetables or slaw"
             },
             {
                 "itemName": "FLAME GRILLED CHICKEN",
                 "spiceLevel": "Medium",
-                "price": 24.50,
+                "price": 26,
                 "description": "Half chicken marinated in chipotle, basted with smoky hot sauce, creamy poblano mash & vegetables or slaw"
             },
             {
@@ -328,11 +329,11 @@
                 "options": [
                     {
                         "optionText": "220g",
-                        "optionPrice": 52.00
+                        "optionPrice": 58
                     },
                     {
                         "optionText": "300g",
-                        "optionPrice": 72.00
+                        "optionPrice": 78
                     }
                 ]
             },
@@ -343,18 +344,18 @@
                 "options": [
                     {
                         "optionText": "220g",
-                        "optionPrice": 52.00
+                        "optionPrice": 55
                     },
                     {
                         "optionText": "300g",
-                        "optionPrice": 72.00
+                        "optionPrice": 75
                     }
                 ]
             },
             {
                 "itemName": "BBQ PORK RIBS",
                 "spiceLevel": "Medium",
-                "price": 38.00,
+                "price": 42.95,
                 "description": "Char grilled pork ribs seasoned with our signature spices, glazed with bbq sauce, served with Cajun potato, fried onion rings, vegetables or salad"
             }
         ]
@@ -364,12 +365,12 @@
         "items": [
             {
                 "itemName": "SPICY CHURROS",
-                "price": 9.50,
+                "price": 10.50,
                 "description": "Deep fried Mexican donuts coated with cinnamon and sugar, served with spicy Chocolate dip and Ginger sauce"
             },
             {
                 "itemName": "CHEESE CAKE",
-                "price": 8.50,
+                "price": 9.95,
                 "description": "Baked cheese cake with wild berry coulis & caramel sauce"
             }
         ]

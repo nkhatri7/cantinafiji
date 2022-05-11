@@ -10,6 +10,7 @@ import veganIcon from '../../assets/vegan-icon.svg';
 
 type FoodOption = {
     optionText: string,
+    spiceLevel?: string,
     dietary?: string,
     optionPrice: number
 };
@@ -95,6 +96,16 @@ const Menu = () => {
         setFoodMenuShowing(prev => !prev);
     }
 
+    const getSpiceLevelIcon = (spiceLevel: string): string => {
+        if (spiceLevel === 'Mild') {
+            return mildSpiceIcon;
+        } else if (spiceLevel === 'Medium') {
+            return mediumSpiceIcon;
+        } else {
+            return hotSpiceIcon;
+        }
+    }
+
     const FoodOptionDisplay = (props: { foodOption: FoodOption }): ReactElement => (
         <p className="food-option">
             {props.foodOption.optionText}
@@ -107,6 +118,14 @@ const Menu = () => {
             : null
             }
             <span className="option-price">{`$${props.foodOption.optionPrice.toFixed(2)}`}</span>
+            {props.foodOption.spiceLevel ? 
+                <img 
+                    src={getSpiceLevelIcon(props.foodOption.spiceLevel)} 
+                    alt={`${props.foodOption.spiceLevel} spice`} 
+                    className="option-icon" 
+                />
+                : null
+            }
         </p>
     );
 
@@ -116,9 +135,7 @@ const Menu = () => {
                 <h4 className="item-name">{props.foodItem.itemName}</h4>
                 {props.foodItem.spiceLevel ? 
                     <img 
-                        src={(props.foodItem.spiceLevel === 'Mild') ? mildSpiceIcon :
-                                (props.foodItem.spiceLevel === 'Medium') ? mediumSpiceIcon :
-                                hotSpiceIcon} 
+                        src={getSpiceLevelIcon(props.foodItem.spiceLevel)} 
                         alt={`${props.foodItem.spiceLevel} spice`} 
                         className="food-item-icon" 
                     />
@@ -161,9 +178,7 @@ const Menu = () => {
                     }
                     {section.spiceLevel ?
                         <img 
-                            src={(section.spiceLevel === 'Mild') ? mildSpiceIcon :
-                            (section.spiceLevel === 'Medium') ? mediumSpiceIcon :
-                            hotSpiceIcon} 
+                            src={getSpiceLevelIcon(section.spiceLevel)} 
                             alt="Medium Spice" 
                             className="section-spice-icon" 
                         />
