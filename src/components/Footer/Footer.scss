@@ -1,13 +1,13 @@
 .website-footer {
     background-color: #272727;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 2rem 0;
     > .footer-logo {
         width: 6rem;
-        margin: 0 0 2rem 0;
     }
     .footer-link {
         text-decoration: none;
@@ -19,13 +19,23 @@
     .separator {
         margin: 0 0.5rem;
     }
+    > .footer-socials {
+        gap: 0 1rem;
+        > .footer-social-link > svg {
+            width: 1.5rem;
+        }
+    }
 }
 
 @media screen and (min-width: 550px) {
     .website-footer {
         flex-direction: row;
-        > .footer-logo {
-            margin: 0 2rem 0 0;
-        }
+        gap: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .website-footer {
+        padding: 1.5rem 2.5rem;
     }
 }
