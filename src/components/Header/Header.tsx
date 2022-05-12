@@ -13,6 +13,8 @@ type NavItem = {
     page: string
 };
 
+const formPages: string[] = ['Reservations', 'Contact'];
+
 const Header = ({ currentPage }: HeaderProps) => {
 
     const menuBtn = useRef<HTMLButtonElement>(null);
@@ -37,13 +39,20 @@ const Header = ({ currentPage }: HeaderProps) => {
 
     return (
         <header className='space-between'>
-            <Link to='/'>
-                <img 
-                    src={currentPage === "Home" ? whiteLogo : blackLogo} 
-                    alt="Cantina Logo" 
-                    className="logo" 
-                />
-            </Link>
+            {formPages.includes(currentPage) ?
+                <Link to='/'>
+                    <img src={blackLogo} alt="Cantina Logo" className="logo form-logo-mobile" />
+                    <img src={whiteLogo} alt="Cantina Logo" className="logo form-logo-desktop" />
+                </Link>
+                :
+                <Link to='/'>
+                    <img 
+                        src={currentPage === 'Home' ? whiteLogo : blackLogo} 
+                        alt="Cantina Logo" 
+                        className="logo" 
+                    />
+                </Link>
+            }
             <button 
                 className={`menu-btn ${currentPage === "Home" ? 'menu-btn-white' : ''}`} 
                 aria-label='Menu' ref={menuBtn} 
@@ -58,7 +67,7 @@ const Header = ({ currentPage }: HeaderProps) => {
                     <NavLink link='/menu' page='Menu' />
                     <NavLink link='/events' page="What's On" />
                     <NavLink link='/' page='Reservations' />
-                    <NavLink link='/' page='Contact' />
+                    <NavLink link='/contact' page='Contact' />
                 </ul>
             </nav>
         </header>

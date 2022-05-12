@@ -14,7 +14,10 @@ header {
     transform: translateX(-50%);
     z-index: 10;
     .logo {
-        max-width: 10rem;
+        width: 10rem;
+    }
+    .form-logo-desktop {
+        display: none;
     }
     > .menu-btn {
         background: url('../../assets/hamburger-icon.svg') no-repeat center;
@@ -68,6 +71,17 @@ header {
 @media screen and (min-width: 768px) {
     header {
         padding: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        .form-logo-desktop {
+            display: block;
+        }
+        .form-logo-mobile {
+            display: none;
+        }
     }
 }
 

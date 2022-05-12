@@ -3,96 +3,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;300;400;500;700;800;900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .flex-start {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .flex-centre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .flex-column-centre {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .space-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-page, .menu, .events, .reservations, .contact {
-  background-color: #FAFAFA;
+    background-color: #FAFAFA;
 }
 
 h1, .nav-link {
-  font-family: 'Geogrotesque Condensed', sans-serif;
-  letter-spacing: 2px;
+    font-family: 'Geogrotesque Condensed', sans-serif;
+    letter-spacing: 2px;
 }
 
-p, a {
-  font-family: 'Poppins', sans-serif;
+p, span, a {
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .body-text {
-  color: #2B2B2B;
-  font-weight: 500;
+    color: #2B2B2B;
+    font-weight: 500;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .cta, .secondary-cta {
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
 }
 
 .cta {
-  background-color: g.$brand-yellow;
-  color: black;
-  border: 1px solid g.$brand-yellow;
+    background-color: g.$brand-yellow;
+    color: black;
+    border: 1px solid g.$brand-yellow;
+}
+
+@media screen and (min-width: 1000px) {
+    .side-graphic {
+        min-height: 100vh;
+        height: 100%;
+        width: 40%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/cantina-art-wall.png') no-repeat left;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-  button:hover {
-    cursor: pointer;
-  }
-  .cta:hover {
-    background-color: #FFC862;
-    border: 1px solid #FFC862;
-  }
-  .secondary-cta:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+    button:hover {
+        cursor: pointer;
+    }
+    .cta:hover {
+        background-color: #FFC862;
+        border: 1px solid #FFC862;
+        cursor: pointer;
+    }
+    .secondary-cta:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }
