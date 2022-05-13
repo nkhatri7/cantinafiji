@@ -14,7 +14,7 @@ const Home = () => {
                 <h1>Experience Fiji's Own Mexico</h1>
                 <div className="landing-page-btns-container flex-centre">
                     <Link to="/menu" className='secondary-cta'>View Menu</Link>
-                    <Link to="/" className='cta'>Book A Table</Link>
+                    <Link to="/reservations" className='cta'>Book A Table</Link>
                 </div>
             </main>
             <footer className='flex-column-centre'>
