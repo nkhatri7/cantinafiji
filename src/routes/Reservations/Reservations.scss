@@ -1,0 +1,47 @@
+@use '../../global' as g;
+
+.reservations > main {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    .form-label-container {
+        width: 100%;
+        gap: 0.3rem 0;
+        > .form-label {
+            font-weight: 500;
+        }
+    }
+    .rw-state-focus .rw-widget-picker {
+        border-color: g.$brand-yellow;
+        box-shadow: none;
+    }
+    .date-input, .time-dropdown, .guests-input {
+        
+        > .rw-widget-picker {
+            height: 3rem;
+        }
+        .rw-state-selected {
+            background-color: g.$brand-yellow;
+            border-color: g.$brand-yellow;
+            font-weight: 600;
+        }
+    }
+    .date-input, .time-dropdown {
+        width: 15rem !important;
+    }
+    .guests-input {
+        max-width: 7rem;
+    }
+    .cta {
+        margin-top: 0.5rem;
+    }
+    .large-groups {
+        margin-top: 1rem;
+        > .large-groups-title {
+            font-family: 'Arima Madurai';
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+    }
+}

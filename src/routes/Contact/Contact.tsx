@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import './Contact.scss';
+import '../../components/Form.scss';
 
 const Contact = () => {
 
@@ -55,6 +56,7 @@ const Contact = () => {
                 messageErrorMessage.current.innerText = '';
             }
         }
+        
         e.preventDefault();
     }
 
@@ -79,6 +81,7 @@ const Contact = () => {
                                 placeholder='Name' 
                                 value={name}
                                 onChange={handleNameChange}
+                                required
                                 className='form-input'
                             />
                             <span ref={nameErrorMessage} className="error-message"></span>
@@ -91,6 +94,7 @@ const Contact = () => {
                                 placeholder='Email'
                                 value={email}
                                 onChange={handleEmailChange}
+                                required
                                 className="form-input" 
                             />
                             <span ref={emailErrorMessage} className="error-message"></span>
@@ -103,6 +107,7 @@ const Contact = () => {
                                 placeholder="What's your enquiry..."
                                 value={message}
                                 onChange={handleMessageChange}
+                                required
                                 className="form-input" 
                             />
                             <span ref={messageErrorMessage} className="error-message"></span>
@@ -110,6 +115,7 @@ const Contact = () => {
                         <input 
                             type="submit" 
                             value="SEND" 
+                            required
                             className="cta" 
                         />
                     </form>
@@ -118,7 +124,7 @@ const Contact = () => {
                         <Link to='/reservations' className='text-link'>
                             reservations
                         </Link>
-                        &nbsp;form.
+                        &nbsp;form
                     </p>
                 </section>
             </main>

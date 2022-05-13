@@ -6,6 +6,7 @@ import Contact from './routes/Contact/Contact';
 import Events from './routes/Events/Events';
 import Home from './routes/Home/Home';
 import Menu from './routes/Menu/Menu';
+import Reservations from './routes/Reservations/Reservations';
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/menu' element={<Menu />} />
           <Route path='/events' element={<Events />} />
-          <Route path='contact' element={<Contact />} />
+          <Route path='/reservations' element={<Reservations />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>
