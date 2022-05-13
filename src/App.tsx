@@ -6,6 +6,7 @@ import Contact from './routes/Contact/Contact';
 import Events from './routes/Events/Events';
 import Home from './routes/Home/Home';
 import Menu from './routes/Menu/Menu';
+import NotFound from './routes/NotFound/NotFound';
 import Reservations from './routes/Reservations/Reservations';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/events' element={<Events />} />
           <Route path='/reservations' element={<Reservations />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,24 @@
+.not-found > main {
+    height: 100vh;
+    text-align: center;
+    padding: 0 1.5rem;
+    > h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    > .body-text {
+        width: 90%;
+        max-width: 800px;
+    }
+    > .cta {
+        width: 15rem;
+        height: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .not-found > main {
+        padding: 0 2.5rem;
+    }
+}
