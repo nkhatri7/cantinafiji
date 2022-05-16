@@ -3,7 +3,7 @@ import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './Events.scss';
-import maxWithSombrero from '../../assets/man-with-sombrero.png';
+import manWithSombrero from '../../assets/man-with-sombrero.png';
 import eventsImg from '../../assets/events-img.jpeg';
 
 type Event = {
@@ -47,7 +47,7 @@ const Events = () => {
                     <div className="events-title-container flex-centre">
                         <h1>What's On?</h1>
                         <img 
-                            src={maxWithSombrero} 
+                            src={manWithSombrero} 
                             alt="Man with sombrero" 
                             className="sombrero-man-graphic" 
                         />
