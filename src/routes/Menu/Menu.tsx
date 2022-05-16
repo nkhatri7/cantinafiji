@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ReactElement } from 'react';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './Menu.scss';
@@ -57,6 +58,8 @@ type DrinksSection = {
 };
 
 const Menu = () => {
+
+    useDocumentTitle('Menu', true);
 
     const [foodMenu, setFoodMenu] = useState<FoodSection[]>([]);
     const [drinksMenu, setDrinksMenu] = useState<DrinksSection[]>([]);

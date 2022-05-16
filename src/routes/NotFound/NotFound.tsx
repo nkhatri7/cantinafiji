@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import './NotFound.scss';
 
 const NotFound = () => {
+
+    useDocumentTitle('Page Not Found', false);
+
     return (
         <div className="not-found">
             <Header currentPage='Not Found' />

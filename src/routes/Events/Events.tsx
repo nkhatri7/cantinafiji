@@ -1,4 +1,5 @@
 import React, { useState, useEffect, ReactElement } from 'react';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './Events.scss';
@@ -11,6 +12,8 @@ type Event = {
 };
 
 const Events = () => {
+
+    useDocumentTitle("What's On", true);
 
     const [events, setEvents] = useState<Event[]>([]);
 

@@ -1,4 +1,5 @@
 import React, { useState, useRef, ChangeEvent, FormEvent } from 'react';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import './Reservations.scss';
@@ -7,6 +8,8 @@ import { DatePicker, DropdownList, NumberPicker } from 'react-widgets/cjs';
 import "react-widgets/scss/styles.scss";
 
 const Reservations = () => {
+
+    useDocumentTitle('Reservations', true);
 
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');

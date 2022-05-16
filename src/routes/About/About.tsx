@@ -1,10 +1,14 @@
 import React from 'react';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './About.scss';
 import fijianArt from '../../assets/cantina-fijian-art.png';
 
 const About = () => {
+
+    useDocumentTitle('About Us', true);
+
     return (
         <div className="about-page">
             <Header currentPage='About Us' />

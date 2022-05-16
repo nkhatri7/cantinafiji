@@ -1,4 +1,5 @@
 import React, { useState, useRef, ChangeEvent, FormEvent } from 'react';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
@@ -6,6 +7,8 @@ import './Contact.scss';
 import '../../components/Form.scss';
 
 const Contact = () => {
+
+    useDocumentTitle('Contact', true);
 
     const [name, setName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
